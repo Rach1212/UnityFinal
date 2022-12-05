@@ -1,21 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class BookNumber : MonoBehaviour
 {
 
+    public int score;
+    public TextMeshProUGUI scoreUI;
 
-    public Text BookText;
-    private int ScoreNum;
 
 
-    void Start()
+    void Update()
 {
-    ScoreNum = 0;
-    BookText.GetComponent<Text>().text = "Book Collected: " + ScoreNum;
+    scoreUI.text = score.ToString();
+
 
 }
 
+	void OnCollisionEnter(Collision collision)
+	{
+		if(collision.gameObject.tag == "Player")
+    {
+        
+        KeepScore.Score += 1;
+        Debug.Log ("Collide penguin and book");
+    
+    }
+    }
 }
