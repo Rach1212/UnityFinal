@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class start : MonoBehaviour
 {
+    [SerializeField] AudioSource clickSound;
     // Start is called before the first frame update
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1
-    );
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        clickSound.Play();
     }
  
 }

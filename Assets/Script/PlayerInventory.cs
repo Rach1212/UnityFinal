@@ -7,6 +7,7 @@ using UnityEngine.Events;
 // this is the player inventory 
 public class PlayerInventory : MonoBehaviour
 {
+    [SerializeField] AudioSource collectSound;
     public int NumberOfBooks {get; private set; }
 
     public UnityEvent<PlayerInventory> OnBookCollected; 
@@ -16,5 +17,6 @@ public class PlayerInventory : MonoBehaviour
     {
         NumberOfBooks++;
         OnBookCollected.Invoke(this);
+        collectSound.Play();
     }
 }

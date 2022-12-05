@@ -354,15 +354,15 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/cross.cs"
-"Assets/finsh.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
 "Assets/Script/Book.cs"
+"Assets/Script/cross.cs"
+"Assets/Script/finsh.cs"
 "Assets/Script/InventoryUI.cs"
 "Assets/Script/PlayerInventory.cs"
+"Assets/Script/start.cs"
 "Assets/Script/ThirdPersonMovement.cs"
-"Assets/start.cs"
 -langversion:9.0
 
 /deterministic
